@@ -1,75 +1,238 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>
-        Stan's World</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </title>
-</head>
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+
+    <style>
+        h1.home__title{
+            font-size:28px;
+        }
+
+        img {
+            border-radius: 100px;
+            float: right;
+            margin-right: 100px;
+            margin-top; 100px;
+            
+        }
+        body {
+            background-color: AntiqueWhite;
+        }
+    </style>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Stanley Nguyen</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <!--Will reference and point to the other sections using href #destination-->
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <!--<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li> -->
+                        <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
+                 
+                        <li class="nav__item"><a href="Stanley_Resume.pdf" class="nav__link">Resume</a></li> 
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home"> <!--Home section-->
+                <div class="home__data">
+                    <img class="Picture on top" src="HandShake Photo.jpg" width="250" s> <!--Picture-->
+                    <!--Hi statements-->
+                    <h1 class="home__title"><!--Hi,--><br>
+                    Hello, my name is Stanley <!-- To change color of name <span class="home__title-color">Stanley</span>-->
+                    <br> and I study Electrical Engineering at BU</h1>
+
+                    <!-- <a href="#" class="button">Contact</a> -->
+                </div>
+
+                <div class="home__social">
+                    <!--href for social media links-->
+                    <a href="https://www.linkedin.com/in/stanley-nguyen-0b896a190/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/StansGawd" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="IMG_2997.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Stan here, </h2>
+                        <p class="BIO">
+                            A little bit about myself. I am a current senior Electrical Engineering
+                            student at Boston University. I have a huge passion for 
+                            the world of electronics as well as the pursuit of cheaper, acessible, and 
+                            clean energy
+                        </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <!--
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+                -->
+
+            <!--===== WORK =====-->
+            <section class="work section" id="Projects"> <!--href will point to here-->
+                <h2 class="section-title">Projects/Academic Research</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="MATLab.pdf" class="work__img">
+                        <img src="Mat.png" alt="">
+                    </a>
+                    <a href="Final_Design.pdf" class="work__img">
+                        <img src="Graph.png" alt="">
+                    </a>
+                    <a href="Plasma.pdf" class="work__img">
+                        <img src="Nuclear.png" alt="">
+                    </a>
+
+                    <a href="Final Report Whack a Mole.pdf" class="work__img">
+                        <img src="Whack.png" alt="">
+                    </a>
+                    
+    <a href="Pew.pdf" class="work__img">
+        <img src="bang.png" alt="">
+    </a>
+                        <!--
+    <a href="" class="work__img">
+        <img src="assets/img/work6.jpg" alt="">
+    </a>
+        -->
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+
+            <!--
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+                -->
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Stanley Nguyen</p>
+
+            <!---
+            <div class="footer__social">
+                
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+                -->
+
+            <p class="footer__copy"><!-- &#169; --> Thank You</p>
+        </footer>
 
 
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-
-
-<style>
-    body{background-color: AntiqueWhite;}
-    img{
-        border-radius: 100px; 
-        float: left;
-        margin-right: 10px;
-    }
-    
-    h1.Name{
-        font-family: Verdana;
-        font-size: 22px;
-    }
-
-    h1.Title{
-        font-family: 'Times New Roman';
-        font-size: 20px;
-    }
-
-    u1.Social_Links{
-        margin-right: 10px;
-    }
-</style>
-<!--Margin right or left moves over-->
-<!--Float will put on left or right side-->
-<body>
-    <div class="wrapper">
-
-    <div class="Left">
-    <img class="Picture on top" src="dog.png" width="200"alt="Thats me">
-        
-    
-    <h1 class="Name">Stanley Nguyen</h1><!--Header-->
-    
-    <h2 style="color:black;" class="Title">Electrical Engineering Student </h2> <!--Radius of half width is circle-->
-    </div>
-
-
-    <div class="Right">
-    <p class="Bio"> <!--Paragraph (Comment)-->
-        Hello there! My name is Stanley Nguyen and I am a current Electrical Engineering 
-        student here at Boston University. It's also time for you to see a glimpse of of life and how much awesome 
-        sauce I have. I will work on this Website soon enough.
-    </p>
-
-    
-    
-    <h3>External Links</h3>
-    
-    <ul class="Social_Links">
-        <li> <!--This is a list (Comment)-->
-            <a href="https://github.com/StansGawd">Github</a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/stanley-nguyen-0b896a190/">LinkedIn</a>
-        </li>
-    </ul>
-    </div>
-    </div>
-</body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
